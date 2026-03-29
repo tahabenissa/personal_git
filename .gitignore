@@ -1,0 +1,4 @@
+miniGit
+*.o
+*.out
+/tmp/
