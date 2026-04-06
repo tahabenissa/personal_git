@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "hash.h"
+#include<string.h>
+#include "list.h"
 
 int main()
 {
-    char* h1 = sha256file("src/main.c");
-    char* h2 = sha256file("src/main.c");
-
-    printf("hash1 = %s\n",h1);
-    printf("hash2 = %s\n",h2);
-
-    free(h1);
-    free(h2);
-
+    List* l =ftol("tests/test1.txt");
+    Cell* c =*l;
+    while(c){
+        printf("%s->",c->data);
+        c=c->next;
+    }
+    printf("null");
     return 0;
 }
