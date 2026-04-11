@@ -1,3 +1,7 @@
+
+#ifndef list_H
+#define list_H
+
 typedef struct cell {
 char* data;
 struct cell* next;
@@ -13,4 +17,4 @@ Cell* searchList(List* l, char* str);
 List* stol(char* s);
 void ltof(List* L, char* path);
 List* ftol(char*path);
-
+#endif
