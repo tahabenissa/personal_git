@@ -2,3 +2,7 @@ miniGit
 *.o
 *.out
 /tmp/
+.mine
+test
+ija
+tests
