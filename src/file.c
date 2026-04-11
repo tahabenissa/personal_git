@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include<dirent.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -62,8 +64,7 @@ char* hashToPath(char* hash){
     strcpy(str+3,hash+2);
     return str ;      
 }
-#include <stdio.h>
-#include <stdlib.h>
+
 
 void blobFile(char* file)
 {
