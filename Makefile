@@ -8,4 +8,5 @@ all:
 clean:
 	rm -f src/*.o
 run: all
-	./miniGit	
+	./miniGit
+runc: run clean	
